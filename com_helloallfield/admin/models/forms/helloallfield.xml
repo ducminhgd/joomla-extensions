@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_helloallfield/models/rules">
+    <fieldset>
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="textfield"
+            type="text"
+            label="COM_HELLOALLFIELD_HELLOALLFIELD_TEXTFIELD_LABEL"
+            description="COM_HELLOALLFIELD_HELLOALLFIELD_TEXTFIELD_DESC"
+            class="inputbox validate-greeting"
+            validate="textfield"
+            required="true"
+            default=""
+        />
+    </fieldset>
+</form>

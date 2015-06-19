@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
-    <name>Hello All Field</name>
+    <name>COM_HELLOALLFIELD</name>
     <!-- The following elements are optional and free of formatting constraints -->
     <creationDate>June 2015</creationDate>
     <author>Giã Dương Đức Minh</author>
@@ -8,10 +8,8 @@
     <authorUrl>http://gas.garena.vn</authorUrl>
     <copyright>Copyright (C) 2015 Busy Bee</copyright>
     <license>GNU v2.0 or later</license>
-    <!--  The version string is recorded in the components table -->
     <version>0.0.1</version>
-    <!-- The description is optional and defaults to the name -->
-    <description>Demo all fields that Joomla! 3+ supports</description>
+    <description>COM_HELLOALLFIELD_DESCRIPTION</description>
     
     <install> <!-- Runs on install -->
         <sql>
@@ -35,16 +33,27 @@
         <folder>models</folder>
         <folder>sql</folder>
     </files>
+    
+    <languages folder="site/language">
+        <language tag="en-GB">en-GB/en-GB.com_helloallfield.ini</language>
+    </languages>
  
     <administration>
-        <menu>Hello All Field</menu>
+        <menu link="index.php?option=com_helloallfield">COM_HELLOALLFIELD</menu>
         <files folder="admin">
             <filename>index.html</filename>
+            <filename>controller.php</filename>
             <filename>helloallfield.php</filename>
+            <folder>controllers</folder>
             <folder>models</folder>
             <folder>sql</folder>
             <folder>tables</folder>
+            <folder>views</folder>
         </files>
+        
+        <languages folder="admin/language">
+            <language tag="en-GB">en-GB/en-GB.com_helloallfield.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_helloallfield.sys.ini</language>
+        </languages>
     </administration>
- 
 </extension>

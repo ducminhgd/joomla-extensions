@@ -11,20 +11,17 @@
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * General Controller of Hello All Field component
- *
- * @package     Joomla.Administrator
- * @subpackage  com_helloallfield
- * @since       0.0.7
+ * Form Rule class for the Joomla Framework.
  */
-class HelloController extends JControllerLegacy {
+class JFormRuleTextfield extends JFormRule {
 
     /**
-     * The default view for the display method.
+     * The regular expression.
      *
-     * @var string
-     * @since 12.2
+     * @access	protected
+     * @var		string
+     * @since	2.5
      */
-    protected $default_view = 'helloallfields';
+    protected $regex = '^[^a-zA-Z0-9]+$';
 
 }

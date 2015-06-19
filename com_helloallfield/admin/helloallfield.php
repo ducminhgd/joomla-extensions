@@ -10,6 +10,9 @@
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
+// Set some global property
+$document = JFactory::getDocument();
+
 // Get an instance of the controller prefixed by Hello
 $controller = JControllerLegacy::getInstance('Hello');
 
